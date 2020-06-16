@@ -8,3 +8,5 @@ void print_alphabet_x10(void);
 int _islower(int c);
 /*Lowercase or uppercase*/
 int _isalpha(int c);
+/*Print sign of number*/
+int print_sign(int n);
