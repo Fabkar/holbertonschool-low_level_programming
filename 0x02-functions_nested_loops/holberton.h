@@ -12,3 +12,7 @@ int _isalpha(int c);
 int print_sign(int n);
 /*Absolute value*/
 int _abs(int);
+/*Last digit*/
+int print_last_digit(int);
+/*Jack_bauer*/
+void jack_bauer(void);
