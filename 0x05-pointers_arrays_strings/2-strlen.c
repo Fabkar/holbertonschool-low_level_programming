@@ -1,8 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
- * main - check the code for Holberton School students.
+ *_strlen - count length of a string.
  *@s: Variable pointer.
  * Return: lenght of a sting.
  */
