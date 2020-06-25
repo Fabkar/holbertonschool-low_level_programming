@@ -2,7 +2,7 @@
 /**
  * rev_string - Function thet reverses a string.
  * @s: Pointer.
- *Return: nothing
+ *Return: nothing.
  */
 void rev_string(char *s)
 {
@@ -18,7 +18,7 @@ void rev_string(char *s)
 	end--;
 	while (s < end)
 	{
-		temp =*s;
+		temp = *s;
 		*s = *end;
 		*end = temp;
 		s++;
