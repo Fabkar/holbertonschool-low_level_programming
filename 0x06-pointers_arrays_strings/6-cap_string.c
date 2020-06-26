@@ -23,6 +23,10 @@ char *cap_string(char *s)
 		{
 			s[i] = s[i] - p;
 		}
+		else if ((s[i] >= 97 && s[i] <= 122) && i == 0)
+		{
+			s[i] = s[i] - 32;
+		}
 		else
 		{
 			s[i] = s[i];
