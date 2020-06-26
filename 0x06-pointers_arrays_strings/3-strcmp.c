@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcmp -
+ * _strcmp - function to compare the length of the string.
  *@s1: first strings
  *@s2: second strings.
  *Return: != 0.
