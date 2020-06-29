@@ -1,20 +1,22 @@
 #include "holberton.h"
 /**
- * _memset - fill memory.
+ * _memset - fill the first n byte of the memory.
  * @s: Pointer variable.
- * @b: char.
- * @n: integer.
- * Return: char.
+ * @b: value to be set.
+ * @n: number of bytes to be set to the value.
+ *
+ * Return: pointer.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int a;
+	unsigned int a = 0;
+	char *p = s;
 
-	a = 0;
 	while (a < n)
 	{
-		*(s + a) = b;
+		*p = b;
 		a++;
+		p++;
 	}
-	return (s);
+	return (p);
 }
