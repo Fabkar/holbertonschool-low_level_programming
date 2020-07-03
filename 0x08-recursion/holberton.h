@@ -6,3 +6,6 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int func_alt(int n, int a);
+int is_palindrome(char *s);
+int _strlen(char *s);
+int find_pal(char *s, int start, int end);
