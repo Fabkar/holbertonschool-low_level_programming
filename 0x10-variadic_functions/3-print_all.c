@@ -33,10 +33,12 @@ printf("%f", va_arg(list, double));
 */
 void string(va_list list)
 {
-	if (!list)
-		printf("(nil)");
-	else
-		printf("%s", va_arg(list, char *));
+	char *p;
+	
+	p = va_arg(list, char *);
+	if (p == NULL)
+	p = "(nil)";
+	printf("%s", p);
 }
 /**
 * print_all - Print all types.
