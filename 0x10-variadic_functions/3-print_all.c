@@ -46,7 +46,7 @@ void string(va_list list)
 
 void print_all(const char * const format, ...)
 {
-	formats types[] = {
+	form types[] = {
 	{"c", character},
 	{"i", integer},
 	{"f", floating},
