@@ -34,7 +34,7 @@ printf("%f", va_arg(list, double));
 void string(va_list list)
 {
 	char *p;
-	
+
 	p = va_arg(list, char *);
 	if (p == NULL)
 	p = "(nil)";
