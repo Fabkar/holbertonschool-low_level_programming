@@ -19,15 +19,13 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	r = read(fd_r, buf, BUFSIZ);
-	while (r > 0)
+	while ((r = read(fd_r, buf, BUFSIZ) > 0)
 	{
 		if (fd_w < 0 || write(fd_w, buf, r) != r)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fd_r), exit(99);
 		}
-		r = read(fd_r, buf, BUFSIZ);
 	}
 	if (r < 0)
 	{
